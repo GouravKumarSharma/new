@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HTML/CSS">
+  <meta name="author" content="Anil">
+  <title>Website -Template</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<style media="screen">
+  html{
+  scroll-behavior: smooth;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+p{
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #606060;
+}
+.extradiv h2, .servicediv h2{
+  font-size: 0.9rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+i{
+  color: #2fccd0;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXX common style ends here XXXXXXXXXXXXXXXXXXX */
+.header{
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url("../image/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 80%, 70% 100%, 0 80%, 0 0);
+  position: relative;
+}
+.header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  z-index: -1;
+  opacity: 1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, red 100%);
+}
+.navbar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  z-index: -1;
+  background: linear-gradient(to right,  #1e5799 0%, #3ccdbb 0%, red 100%);
+}
+.nav-item a{
+  color: #fff!important;
+  font-weight: bold;
+}
+.header-section{
+  width: 100%;
+  height: inherit;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.center-div{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a{
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.header-buttons a:hover{
+  text-decoration: none;
+  color: #50d1c0;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+  font-size: 1.3rem;
+  padding: 10px 0 20px 0;
+  color: #fff;
+}
+/* ********************* three extra header div starts ******************** */
+
+.header-extradiv{
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+.extradiv p{text-align: justify;}
+.extradiv{
+  background-color: #fff;
+  border: none;
+  padding: 30px!important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.extradiv:hover{
+  box-shadow: -10px 0px 20px 0 rgba(0,0,0,0.3);
+  transform: translateY(-20px);
+}
+
+/* ********************* three extra header div ends ******************** */
+
+/* ******************* service offer css start ********************** */
+
+.serviceoffers{
+  background-color: #f7f7f9;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+.headings{
+  margin-bottom: 50px;
+}
+.headings h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.names h1{
+  color: #2e2e2e;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.service-icons{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress{
+  height: 0.6rem!important;
+  margin-bottom: 25px!important;
+}
+/* ******************* service offer css ends ********************** */
+
+/* ********************* project (completed) starts ****************************** */
+
+.project-work{
+  margin: 100px 0;
+}
+.project-work h1{
+  font-size: 2rem;
+  text-align: center;
+}
+/* ********************* project (completed) ends ****************************** */
+
+ /* ********************* our pricing starts ******************************  */
+
+.pricing{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  position:  relative;
+}
+.pricing::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+}
+.money{
+  font-size: 40px;
+  line-height: 1;
+  color: #606060;
+}
+.card{
+  transition: 0.4s ease;
+
+}
+.card-header{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #fff!important;
+  padding: 25px 0!important;
+}
+.card-body{
+  padding: 30px 0!important;
+}
+.card-body li{
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #606060;
+}
+.card-footer{
+  background: #fff!important;
+  padding: 30px 0!important;
+}
+.card-footer a{
+  border: 1px solid #50c1d0;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.card:hover .card-footer a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #50d1c0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card-item:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .card-header, .card:hover .money{
+  color: #50d1c0;
+}
+.card-second{
+  transform: translateY(-20px);
+  /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.3); */
+}
+ /* ********************* our pricing ends ****************************** */
+
+
+  /* ********************* our happy clients starts ******************************  */
+
+.happyclients{
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0;
+}
+.box{
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+.box:hover{
+  background: #16c9f6;
+}
+.box:hover p{
+  color: #fff;
+}
+.carousel-indicators{
+  position: absolute;
+  right: 0;
+  bottom: -60px!important;
+}
+.carousel-indicators li{
+  background-color: #16c9f6!important;
+}
+.box a{
+  position: relative;
+}
+.box a img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.box a::after{
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  color: #fff;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box h1{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+.box h2{
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 20px;
+}
+  /* ********************* our happy clients ends ******************************  */
+
+
+ /* ********************* contact us starts ******************************  */
+
+.contactus{
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0;
+  position: relative;
+}
+.contactus::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+}
+.form-button button{
+  border: 1px solid #50c1d0;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  background: transparent;
+}
+form:hover .form-button button{
+  background: #fff;
+  color: #50d1c0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+::placeholder{
+  font-size: 0.85rem;
+}
+ /* ********************* contact us ends ******************************  */
+
+/* ********************* newsletter starts ****************************** */
+
+.newsletter{
+  width: 100%;
+  height: auto;
+  margin: 80px 0;
+}
+.newsletter-input{
+  border-radius: 100px 0px 0px 100px!important;
+  min-width: 150px;
+  min-height: 45px;
+}
+.input-group-text{
+  color: #fff!important;
+  background: #5bc0de!important;
+  border-radius: 0 100px 100px 0!important;
+  min-width: 130px;
+  min-height: 45px;
+}
+.input-group-text:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* *********************  newsletter ends ****************************** */
+
+/* *********************  footer starts ****************************** */
+
+.footersection{
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  background: #00abff;
+  position: relative;
+}
+.footersection p{
+  color: #fff;
+}
+.footer-navlinks{
+  text-align: center;
+}
+.footersection li a{
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footersection h3{
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.2rem!important;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+#myBtn{
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 10;
+  border: none;
+  color: #fff;
+  background: #00abff;
+  padding: 10px;
+  border-radius: 10px;
+}
+#myBtn:hover{
+  background: #606060;
+}
+/* *********************  footer ends ****************************** */
+
+
+/* ****************** Media Queries ********************** */
+@media (max-width: 768px) {
+  .nav-item{
+    text-align: center!important;
+  }
+  .pricing, .happyclients, .contactus{
+    height: auto;
+    margin-top: 50px;
+  }
+  .card-second{
+    transform: translateY(0px);
+    margin: 30px 0;
+  }
+  .contactus p{
+    padding: 0 50px;
+  }
+  .footer-navlinks{
+    text-align: left;
+  }
+  .footer-div{
+    margin: 30px 0;
+  }
+}
+.left-side{
+  position: relative;
+  float: left;
+top: -70px;
+left: 20px;
+padding: 5px;
+font-size: 12px;
+height: 25px;
+font-weight: bold;
+}
+.right-side{
+  position: relative;
+  float: right;
+  top: -70px;
+  right: 20px;
+  padding: 5px;
+  font-size: 12px;
+  height: 25px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+  <div class="header" id="topheader">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container p-2">
+        <a class="navbar-brand font-weight-bold text-white" href="#">SattamatkaJD.net</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicediv"></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#newsletterdiv">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactdiv">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="header-section">
+      <div class="center-div">
+      <!--  <h1 class="font-weight-bold lg">Satta Matka Market</h1>-->
+        <p style="font-size:15px"><strong style='color:#c334eb'>SattaMatkajd.net </strong> The Best Website For Satta Matka, Kalyan Matka, Satta Market And SattaMatka. We Also Supply You Satta Numbar 220 Patti Charts And Repair Matka Number Dpboss Satta Weekly Jodi And Panna. We Use Our Experience to Assist You With Satta Market To Lose A Game. Find India's Greatest Matka Result Website. We Provide The Finest Satta Matka Tips & Satta batta Tricks In Matka Guessing Forum. Only Visit Our Matka Site & Get Weekly Lines Game, Date Repair And complimentary Matka Number Guessing Formula. Morning Syndicate Matka Bazar Syndicate Night Effects Live from Matka business. Daily Vizit Quick Satta Matka Website. Save This Website BookMark Now. Thankyou.
+        </p>
+        <div class="header-buttons">
+          <a href="#newsletterdiv">AboutUs</a>
+          <!--<a href="#contactdiv">ContactUs</a>-->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ***************** header part end ************************** -->
+
+  <!-- ********************* three extra header div starts ******************** -->
+
+  <section class="header-extradiv">
+    <div class="container">
+      <div class="row">
+        <div class="extradiv col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-3x fa fa-magic"></i></a>
+          <h2>Matka Guessing</h2>
+          <p>Satta Matka | Satta Matka Guessing | Kalyan Matka Guessing | Matka Guessing Forum |  Free Matka Guessing | Kalyan Matka Trick | Satta Matka Gods | Satta King Guessing </p>
+        </div>
+        <div class="extradiv col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-3x fa fa-desktop"></i></a>
+          <h2>Top Gaushier</h2>
+          <p>Matka guessing 143 | Simple Matka Guessing | Matka Trick | Dpboss Guessing | Satta Matka 143 Guessing | Satta Matka God | Satta King Guess | </p>
+        </div>
+        <div class="extradiv col-lg-4 col-md-4 col-12">
+          <a href="#"><i class="fa-3x fa fa-trophy"></i></a>
+          <h2>Matka Chart</h2>
+          <p>Satta Matka | Satta Matka Guessing | Kalyan Matka Guessing | Matka Guessing Forum |  Free Matka Guessing | Kalyan Matka Trick | Satta Matka Gods | Satta King Guessing </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ********************* three extra header div starts ******************** -->
+
+  <!-- ********************* offer section starts ****************************** -->
+
+
+
+  <!-- ********************* offer section ends ****************************** -->
+  <div class="col-sm">
+    <center>
+    <div class="alert alert-success" style="background:#34aeeb;color:white; Font-size:25px;" role="alert">
+  Live Result Update.
+</div>
+{% for i in market %}
+<div class="market">
+
+  <div class="market card">
+    <ul>
+      <li style='font-weight:bold; color:red;</colgroup>'>{{i.market_name}}</li>
+
+      <li style='color:black;font-weight:bold;'>{{i.panel}}-{{i.card}}-{{i.jodi}}</li>
+
+      <li>(01:00 - - 02:00)</li>
+    </ul>
+<div class="fchart">
+  <button type="button" class="btn btn-info left-side">Jodi</button>
+
+  <button type="button" class="btn btn-info right-side">Panel</button>
+</div>
+  </div></div>
+{% endfor %}
+
+  <!-- ********************* project (completed) starts ****************************** -->
+<!--
+  <section class="project-work">
+    <div class="container headings text-center">
+      <p class="text-center font-weight-bold">MORE THAN 2,000 WEBSITES CREATED</p>
+    </div>
+    <div class="container d-flex justify-content-around align-items-center text-center">
+      <div>
+        <h1 class="count">1500</h1>
+        <p>CMS Installation</p>
+      </div>
+
+      <div>
+        <h1 class="count">2500</h1>
+        <p>Awards Won</p>
+      </div>
+
+      <div>
+        <h1 class="count">700</h1>
+        <p>Happy Clients</p>
+      </div>
+
+      <div>
+        <h1 class="count">500</h1>
+        <p>Working On</p>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- ********************* project (completed) ends ****************************** -->
+
+
+  <!-- ********************* our pricing start ****************************** -->
+
+  <section class="pricing" id="pricingdiv">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold text-white">TOP Live Result Update</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        {% for i in market %}
+        <div class="col-lg-4 col-12">
+          <div class="card text-center card-item">
+            <div class="card-header">{{i.market_name}}</div>
+            <div class="card-body">
+
+              <li><span class="money">{{i.panel}}-{{i.card}}-{{i.jodi}}</span></li>
+              <li>(01:00 - - 02:00)</li>
+            </div>
+            <div class="card-footer">
+              <a href="#">JD AANK Chart</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ********************* contact us starts ****************************** -->
+
+  <section class="contactus" id="contactdiv">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold">CONTACT US</h1>
+      <p class="text-center text-captalize pt-1">We're here to help and answer any question you might have. we look forward to hearing from you.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+
+          <form action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter Your Name" id="username" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter Email" id="email" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" placeholder="Enter Mobile Number" id="mobile" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Enter Your Message" id="comment"></textarea>
+            </div>
+            <div class="d-flex justify-content-center form-button">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ********************* contact us ends ****************************** -->
+  <div class="card">
+    <div class="card-body">
+      <div class="card-header">→JDGUSHING Forum Important Links </div>
+      <div class="card alert alert-warning" style="width: 100%;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href='{% url 'login' %}' >Matka Guessing</a></li>
+    <li class="list-group-item"><a href=''>Satta King Jodi</a></li>
+    <li class="list-group-item"><a href=''>Today Free Game</a></li>
+    <li class="list-group-item"><a href=''>Weekly Jodi Patti</a></li>
+    <li class="list-group-item"><a href=''>Matka Lifetime Trick tips</a></li>
+
+  </ul>
+</div>
+    </div>
+  </div>
+  <!-- ********************* newsletter starts ****************************** -->
+
+  <section class="newsletter" id="newsletterdiv">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold">SattamatkaJD</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-12 ">
+          <div class="input-group mb-3">
+            <h4 class="about" style='background:#34aeeb;color:white'>Get latest updates, satta matka results.</h4>
+            <p>Get fastest live update sattamatka market results fastest live update with best guessers. In this online world, you can found a variety of sattamatka market is available. In this 21st century, matka satta becomes one of the popular and unique games in the whole world. This satta matka game has originated in 1970 but some new features have been added in the current time. If you want to know how to play this tricky gambling Indian satta matka game, get all tips & tricks from our trusted satta matka website. Here you can get the best strategy & satta matka tips to play this game and to avail yourself of this game for winning more amount money.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-12 ">
+          <div class="input-group mb-3">
+            <h4 class="about" style='background:#34aeeb;color:white; font-size:19px'>What to know before you start the Satta Matka Market online game?</h4>
+            <p>Our satta matta matka expert discusses all types of satta matka game including Kalyanmatka, satta batta, kalyan satta, and how to get satta matka result quickly. People search on Goggle via the keywords satta matka net or satta matka com but you can get trusted fast satta news and all details about games on our website. We offer you the trustworthy platform to play Indian satta matka in a safe way. Here you can find wide range of including kalyan matka game, kalyan matka Bazar, matka satta kalyan, matka satta chart, Milan matka chart, Rajdhani matka chart, live satta result, fastest matka result, kalyan matka Jodi, fix matka Jodi, kalyan satta Jodi and many more. We also provide you matka result today - SattaMatta, weekly Jodi and satta king result, free satta matka and tips.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ********************* newsletter ends ****************************** -->
+
+
+  <!-- ********************* foter starts ****************************** -->
+
+  <footer class="footersection" id="footerdiv">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 footer-div">
+          <div>
+            <h3>ABOUT SattamatkaJD.net</h3>
+            <p>Satta matka chart: help you to guesses accurate matka game. All satta matka website carry would have a chart section, but our records (chart) are eye protected and user-friendly like zoom in or zoom out function and search option available. In this page you get many charts and there are two different types like 1. Jodi chart, 2. Panel Chart (Patti Chart). Previous results data collection from Matka Office and written datewise and make charts and records for all satta market. Too many Indian people assume a number and bet but that is wrong process, help of this chart you find out an accurate matka satta number for play and earn case. Here you get Oldest Satta Charts and Records.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 footer-div">
+          <div class="footer-navlinks">
+            <h3>NAVIGATION LINKS</h3>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">JD Gausher</a></li>
+            <li><a href="#">About</a></li>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12 footer-div">
+          <div>
+            <div class="container newsletter-main">
+              <div class="row">
+                <div class="col-lg-12 col-12 ">
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control newsletter-input" placeholder="Your Mobile">
+                    <div class="input-group-append">
+                      <span class="input-group-text">Get Connect</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <p>Copyright &copy;2022 All rights reserved | SattamatkaJD.net</p>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ********************* footer ends ****************************** -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $('.count').counterUp({
+    delay:10,
+    time:300
+  })
+  // Get the button:
+  mybutton = document.getElementById("myBtn");
+
+  //When the user scrolls down 20px from the top of the document, show the buttons
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  //When the user clicks on the button, scroll to the top of the document
+  function topFunction(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+</body>
+</html>
